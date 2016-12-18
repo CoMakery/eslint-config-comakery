@@ -1,60 +1,41 @@
 {
-  "name": "eslint-config-standard",
-  "description": "JavaScript Standard Style - ESLint Shareable Config",
-  "version": "6.2.1",
+  "name": "eslint-config-comakery",
+  "description": "CoMakery ESLint Shareable Config",
+  "version": "0.0.0",
   "author": {
-    "name": "Feross Aboukhadijeh",
-    "email": "feross@feross.org",
-    "url": "http://feross.org/"
+    "name": "CoMakery",
+    "url": "https://github.com/CoMakery"
   },
-  "bugs": {
-    "url": "https://github.com/feross/eslint-config-standard/issues"
+  "scripts": {
+    "test": "tape test/*.js"
   },
-  "devDependencies": {
-    "eslint": "^3.8.1",
-    "eslint-plugin-promise": "^3.3.0",
-    "eslint-plugin-standard": "^2.0.0",
-    "tape": "^4.6.0"
-  },
-  "homepage": "https://github.com/feross/eslint-config-standard",
-  "keywords": [
-    "JavaScript Standard Style",
-    "check",
-    "checker",
-    "code",
-    "code checker",
-    "code linter",
-    "code standards",
-    "code style",
-    "enforce",
-    "eslint",
-    "eslintconfig",
-    "hint",
-    "jscs",
-    "jshint",
-    "lint",
-    "policy",
-    "quality",
-    "simple",
-    "standard",
-    "standard style",
-    "style",
-    "style checker",
-    "style linter",
-    "verify"
-  ],
-  "license": "MIT",
-  "main": "index.js",
   "peerDependencies": {
     "eslint": ">=3.8.1",
     "eslint-plugin-promise": ">=3.3.0",
     "eslint-plugin-standard": ">=2.0.0"
   },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.8.1",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-react": "^6.8.0",
+    "eslint-plugin-standard": "^2.0.0",
+    "tape": "^4.6.0"
+  },
+  "homepage": "https://github.com/CoMakery/eslint-config-comakery",
   "repository": {
     "type": "git",
-    "url": "git://github.com/feross/eslint-config-standard.git"
+    "url": "git://github.com/CoMakery/eslint-config-comakery.git"
   },
-  "scripts": {
-    "test": "tape test/*.js"
-  }
+  "bugs": {
+    "url": "https://github.com/CoMakery/eslint-config-comakery/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "quality",
+    "verify"
+  ],
+  "license": "MIT",
+  "main": "eslintrc.js"
 }
