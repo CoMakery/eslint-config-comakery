@@ -7,6 +7,9 @@
     "url": "https://github.com/CoMakery"
   },
   "scripts": {
+    "shipit": "npm-run-all --silent pre-push && git push --tags origin head",
+    "pre-push": "npm-run-all --silent check-clean checks",
+    "check-clean": "if [[ $(git status --porcelain) ]]; then echo '*** Please stash or commit changes first ***\n' && exit 1; fi ",
     "checks": "npm-run-all --silent test lint",
     "lint": "node_modules/eslint/bin/eslint.js --config eslintrc.js . test",
     "test": "tape test/*.js"
