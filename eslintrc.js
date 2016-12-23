@@ -1,4 +1,4 @@
-const ignore = 0
+const off = 0
 const warn = 1
 const error = 2
 
@@ -205,11 +205,11 @@ const config = {
     // CUSTOM:
     'comma-dangle': [error, 'only-multiline'],
     'complexity': [error, { 'max': 3 }],
-    'consistent-this': ['error', 'self'],
-    'func-style': ['error', 'expression'],
+    'consistent-this': [error, 'self'],
+    'func-style': [error, 'expression'],
     'linebreak-style': [error, 'unix'],
     'no-nested-ternary': error,
-    'no-return-assign': ignore,
+    'no-return-assign': off,
     'no-multi-spaces': [ error, { 'exceptions': { 'ArrayExpression': true } } ],
     'no-unused-vars': [error, { 'varsIgnorePattern': '^(' + unusedVars.join('|') + ')$' }],
     'no-var': error,
