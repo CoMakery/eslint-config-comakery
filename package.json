@@ -7,6 +7,8 @@
     "url": "https://github.com/CoMakery"
   },
   "scripts": {
+    "checks": "npm-run-all --silent test lint",
+    "lint": "node_modules/eslint/bin/eslint.js --config eslintrc.js . test",
     "test": "tape test/*.js"
   },
   "peerDependencies": {
@@ -20,6 +22,7 @@
     "eslint-plugin-promise": "^3.3.0",
     "eslint-plugin-react": "^6.8.0",
     "eslint-plugin-standard": "^2.0.0",
+    "npm-run-all": "^3.1.2",
     "tape": "^4.6.0"
   },
   "homepage": "https://github.com/CoMakery/eslint-config-comakery",

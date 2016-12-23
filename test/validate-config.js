@@ -1,15 +1,15 @@
-var eslint = require('eslint')
-var test = require('tape')
+const eslint = require('eslint')
+const test = require('tape')
 
-test('load config in eslint to validate all rule syntax is correct', function (t) {
-  var CLIEngine = eslint.CLIEngine
+test('load config in eslint to validate all rule syntax is correct', (t) => {
+  const CLIEngine = eslint.CLIEngine
 
-  var cli = new CLIEngine({
+  const cli = new CLIEngine({
     useEslintrc: false,
     configFile: 'eslintrc.js'
   })
 
-  var code = 'let foo = 1\nconst bar = function() {}\nbar(foo)\n'
+  const code = 'let foo = 1\nconst bar = function() {}\nbar(foo)\n'
 
   t.equal(cli.executeOnText(code).errorCount, 0)
   t.end()
