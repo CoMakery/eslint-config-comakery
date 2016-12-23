@@ -3,19 +3,17 @@ const warn = 1
 const error = 2
 
 const unusedVars = [
-  'd',
-  'ignore',
+  'd',    // debug function from lightsaber
 ]
 
 const config = {
   env: {
     es6: true,
-    node: true
+    node: true,
   },
 
   globals: {
     document: false,
-    CoreNetwork: true,
   },
 
   parser: 'babel-eslint',
@@ -217,7 +215,7 @@ const config = {
     'promise/catch-or-return': warn,
     'promise/no-native': error,
     'space-before-function-paren': [error, 'never'],
-    'prefer-arrow-callback': error,
+    'prefer-arrow-callback': warn,
   }
 }
 
