@@ -18,7 +18,7 @@ official ESLint website.
 To use this ESLint shareable config, first run this:
 
 ```bash
-npm install --save-dev eslint-config-comakery eslint-plugin-standard eslint-plugin-promise
+npm install --save-dev eslint-config-comakery
 ```
 
 Then, add this to your .eslintrc file:

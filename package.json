@@ -11,17 +11,14 @@
     "lint": "node_modules/eslint/bin/eslint.js --config eslintrc.js . test",
     "test": "tape test/*.js"
   },
-  "peerDependencies": {
+  "dependencies": {
     "eslint": ">=3.8.1",
     "eslint-plugin-promise": ">=3.3.0",
-    "eslint-plugin-standard": ">=2.0.0"
+    "eslint-plugin-standard": ">=2.0.0",
+    "eslint-plugin-react": ">=6.8.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "eslint": "^3.8.1",
-    "eslint-plugin-promise": "^3.3.0",
-    "eslint-plugin-react": "^6.8.0",
-    "eslint-plugin-standard": "^2.0.0",
     "npm-run-all": "^3.1.2",
     "tape": "^4.6.0"
   },
