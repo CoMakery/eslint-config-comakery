@@ -210,7 +210,7 @@ const config = {
     'no-return-assign': off,
     'no-multi-spaces': [ error, { 'exceptions': { 'ArrayExpression': true } } ],
     'no-unused-vars': [error, { 'varsIgnorePattern': '^(' + unusedVars.join('|') + ')$' }],
-    'no-var': error,
+    // 'no-var': error,   // allow ES5
     'promise/always-return': error,
     'promise/catch-or-return': warn,
     'space-before-function-paren': [error, 'never'],
