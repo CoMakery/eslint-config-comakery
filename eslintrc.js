@@ -214,7 +214,7 @@ const config = {
     'promise/always-return': error,
     'promise/catch-or-return': warn,
     'space-before-function-paren': [error, 'never'],
-    'prefer-arrow-callback': warn,
+    // 'prefer-arrow-callback': warn,
   }
 }
 
